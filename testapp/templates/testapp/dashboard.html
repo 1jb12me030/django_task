@@ -1,0 +1,23 @@
+<!-- templates/dashboard.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Dashboard</h1>
+
+    <h2>Total Stock for the day: {{ total_stock }}</h2>
+    <h2>Total Sales for the day: {{ total_sales }}</h2>
+    <h2>Profit & Loss: {{ profit_loss }}</h2>
+
+    <h2>New Order List</h2>
+    <ul>
+        {% for order in new_orders %}
+            <li>{{ order }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
